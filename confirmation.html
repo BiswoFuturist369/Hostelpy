@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+</head>
+<body>
+    <h1>Booking Confirmation</h1>
+    <p>Thank you, {{ name }}!</p>
+    <p>Your Details:</p>
+    <ul>
+        <li>Age: {{ age }}</li>
+        <li>Field of Study: {{ field }}</li>
+        <li>Previous Stay at Hostel: {{ previous_stay }}</li>
+        <li>Local Relatives: {{ local_relatives }}</li>
+        <li>Room Type: {{ room_type }}</li>
+        <li>AC Preference: {{ 'Yes' if ac == 'yes' else 'No' }}</li>
+    </ul>
+    <p>Total Price: ₹{{ total_price }}</p>
+    <p>We look forward to hosting you!</p>
+</body>
+</html>
